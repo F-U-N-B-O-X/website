@@ -42,7 +42,7 @@ body {background:black;font-size:20px;color:green;font-family:Georgia;padding:0;
 </div> <span id='flasher' class='blinker'>|</span>
 
 
-<button class='skipIntro' onclick='window.open("home.html","_self");'>Skip</button>
+<button class='skipIntro' onclick='window.open("home.html","_self");' id='skipBtn'>Skip</button>
 </body>
 
 <script>
@@ -174,8 +174,19 @@ function pt2() {
         setTimeout(pt2,3500); break;
         
         case 19:
+        glitch.style.display = 'block';
+        setTimeout(pt2,100); break;
+        
+        case 20:
+        glitch.style.display = 'none';
+        setTimeout(pt2,400); break;
+        
+        case 21:
         consol.innerHTML = '';
         document.getElementById('flasher').style.display = 'none';
+        document.getElementById('skipBtn').style.display = 'none';
+        iterations = 0;
+        setTimeout(pt3, 5000);
         break;
         
     }
@@ -185,6 +196,11 @@ function pt2() {
     iterations += 1;
     //consol.innerHTML += " <span id='flasher' class='blinker'>|</span>";
     
+}
+
+function pt3() {
+	consol.innerHTML = '> Loading Home Page...';
+	window.open('home.html','_self');
 }
 
 </script>
