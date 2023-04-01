@@ -7,7 +7,7 @@
 }
 
 .headlink:hover {
-  color:green;font-size:23px;cursor:pointer;font-weight:bold;
+  cursor:pointer;font-weight:bold;text-decoration-line:underline;text-decoration-color:green;
 }
 
 .headerImage {
