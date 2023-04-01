@@ -1,4 +1,9 @@
-body {font-family:arial;font-size:18px;}
-h1 {font-size:25px;}
+body {font-family:arial;font-size:18px;padding:0px;}
 
-.container {border:2px solid white; color:white; background:black; margin:auto; padding:10px;}
+h1 {font-size:25px;font-weight:bold;font-family:georgia;}
+h2 {font-size:22px;font-family:georgia;}
+p{margin-top:15px;}
+
+.windowContainer {margin:auto;width:100vw;max-width:900px;}
+
+.container {border:2px solid white; color:white; background:black; margin:auto; padding:10px; border-radius:5px;}
