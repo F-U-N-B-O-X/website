@@ -13,13 +13,16 @@ function createHead(){
 function checkPageNumber(pageNumber) {
   var idtochng;
   switch(pageNumber){
+    case 'null':idtochng = 'null';break;
     case 0:idtochng = 'hmbt';break;
     case 1:idtochng = 'abbt';break;
     case 2:idtochng = 'bytk';break;
   }
   
+  if(idtochng != 'null') {
   document.getElementById(idtochng).style.textDecoration = "underline";
   document.getElementById(idtochng).style.textDecorationColor = "blue";
+  }
   
 }
 
