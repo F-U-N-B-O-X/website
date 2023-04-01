@@ -1,11 +1,27 @@
 const pageHead = document.getElementById('pageHead');
 
+pageNumber = 0;
+
 gtchtkIt = 0; // Iteration
 
 function createHead(){
   pageHead.innerHTML = "<img src='images/funboxLogoGif.gif' class='headerImage'><br><br>";
-  pageHead.innerHTML += "<a class='headlink'>HOME</a>&emsp;<a class='headlink'>ABOUT</a>&emsp;<a id='bytk' class='headlink'>BUY TICKETS</a>";
+  pageHead.innerHTML +=  "<a href='home.html' class='headlink' id='hmbt'>HOME</a>&emsp;\
+                          <a href='about.html' class='headlink' id='abbt'>ABOUT</a>&emsp;\
+                          <a href='index.html' id='bytk' class='headlink' id='bytkbt'>BUY TICKETS</a>";
+  checkPageNumber();
   setTimeout(gltchTik, 5000);
+}
+
+function checkPageNumber() {
+  var idtochng;
+  switch(pageNumber){
+    case 0:idtochng = 'hmbt';break;
+  }
+  
+  document.getElementById(idtochng).style.textDecoration = "underline";
+  document.getElementById(idtochng).style.textDecorationColor = "blue";
+  
 }
 
 function gltchTik() {
