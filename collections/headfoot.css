@@ -1,3 +1,15 @@
 .head {
-  
+  font-size:25px;color:green;text-align:right;background:black;height:80px;padding:10px;
+}
+
+.headlink {
+ vertical-align:middle;
+}
+
+.headlink:hover {
+  color:aliceBlue;font-size:23px;cursor:pointer;font-weight:bold;
+}
+
+.headerImage {
+  width:200px;height:auto;float:left;margin:10px;margin-left:10px;
 }
