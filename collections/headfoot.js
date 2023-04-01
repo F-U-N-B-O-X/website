@@ -33,7 +33,7 @@ function gltchTik() {
     case 6:
       clearInterval(byglch);
       gtchtkIt = -1;
-      setTimeout(gtchtkIt, 8000);
+      setTimeout(gltchTik, 8000);
       break;
   }
   
