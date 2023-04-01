@@ -8,7 +8,7 @@ function createHead(){
   pageHead.innerHTML = "<img src='images/funboxLogoGif.gif' class='headerImage'><br><br>";
   pageHead.innerHTML +=  "<a href='home.html' class='headlink' id='hmbt'>HOME</a>&emsp;\
                           <a href='about.html' class='headlink' id='abbt'>ABOUT</a>&emsp;\
-                          <a href='index.html' id='bytk' class='headlink' id='bytkbt'>BUY TICKETS</a>";
+                          <a href='index.html' class='headlink' id='bytk'>BUY TICKETS</a>";
   checkPageNumber();
   setTimeout(gltchTik, 5000);
 }
@@ -17,6 +17,8 @@ function checkPageNumber() {
   var idtochng;
   switch(pageNumber){
     case 0:idtochng = 'hmbt';break;
+    case 1:idtochng = 'abbt';break;
+    case 2:idtochng = 'bytk';break;
   }
   
   document.getElementById(idtochng).style.textDecoration = "underline";
