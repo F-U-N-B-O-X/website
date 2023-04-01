@@ -1,7 +1,5 @@
 const pageHead = document.getElementById('pageHead');
 
-pageNumber = 0;
-
 gtchtkIt = 0; // Iteration
 
 function createHead(){
@@ -9,11 +7,10 @@ function createHead(){
   pageHead.innerHTML +=  "<a href='home.html' class='headlink' id='hmbt'>HOME</a>&emsp;\
                           <a href='about.html' class='headlink' id='abbt'>ABOUT</a>&emsp;\
                           <a href='index.html' class='headlink' id='bytk'>BUY TICKETS</a>";
-  checkPageNumber();
   setTimeout(gltchTik, 5000);
 }
 
-function checkPageNumber() {
+function checkPageNumber(pageNumber) {
   var idtochng;
   switch(pageNumber){
     case 0:idtochng = 'hmbt';break;
