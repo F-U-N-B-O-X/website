@@ -8,7 +8,7 @@
 </head>
 
 <style>
-body {background:black;font-size:18px;color:green;font-family:Georgia;padding:0;}
+body {background:black;font-size:20px;color:green;font-family:Georgia;padding:0;}
 
 .cover {background-image:url('https://media.tenor.com/OIzupMoqI9QAAAAC/screen-glitch.gif');height:100vh;width:100vw;position:fixed;top:0;left:0;}
 
@@ -39,11 +39,10 @@ body {background:black;font-size:18px;color:green;font-family:Georgia;padding:0;
 <div id='glitchGif' class='cover' style='display:none;'></div>
 <br>
 <div id='consolDisp' class='textContainer'>
-</div>
-<span id='flasher' class='blinker'>|</span>
+</div> <span id='flasher' class='blinker'>|</span>
 
 
-<button class='skipIntro' onclick='window.open("home.html","_self");'>Skip</button>
+<button class='skipIntro' onclick='window.open("www.google.com","_self");'>Skip</button>
 </body>
 
 <script>
@@ -111,7 +110,7 @@ function pt2() {
         
         case 4:
         glitch.style.display = 'block';
-        setTimeout(pt2,500); break;
+        setTimeout(pt2,300); break;
         
         case 5:
         glitch.style.display = 'none';
@@ -124,7 +123,7 @@ function pt2() {
         
         case 7:
         consol.innerHTML += ' ERROR LOADING';
-        setTimeout(pt2,1500); break;
+        setTimeout(pt2,2000); break;
         
         case 8:
         glitch.style.backgroundImage = 'url("https://media.tenor.com/dxA2j-gsp4oAAAAC/glitch-static.gif")';
@@ -138,12 +137,53 @@ function pt2() {
         
         case 10:
         consol.innerHTML += '<br><br>> Scanning Database...';
+        setTimeout(pt2,2000); break;
+        
+        case 11:
+        glitch.style.backgroundImage = 'url("https://media.tenor.com/OIzupMoqI9QAAAAC/screen-glitch.gif")';
+        glitch.style.display = 'block';
+        setTimeout(pt2,500); break;
+        
+        case 12:
+        glitch.style.display = 'none';
+        consol.innerHTML = '> ';
+        setTimeout(pt2,1000); break;
+        
+        case 13:
+        consol.innerHTML = '> run <b>themepark.exe</b>';
+        setTimeout(pt2,1000); break;
+        
+        case 14:
+        consol.innerHTML += '<br><br>> <b>themepark.exe</b> loading...';
+        setTimeout(pt2,800); break;
+        
+        case 15:
+        consol.innerHTML += '<br><br>> <b>themepark.exe</b> opening...';
+        setTimeout(pt2,1000); break;
+        
+        case 16:
+        glitch.style.display = 'block';
+        setTimeout(pt2,200); break;
+        
+        case 17:
+        glitch.style.display = 'none';
         setTimeout(pt2,900); break;
+        
+        case 18:
+        consol.innerHTML += '<br><br>> Running <b>themepark.exe</b>';
+        setTimeout(pt2,3500); break;
+        
+        case 19:
+        consol.innerHTML = '';
+        document.getElementById('flasher').style.display = 'none';
+        break;
+        
     }
 
 	
     
     iterations += 1;
+    //consol.innerHTML += " <span id='flasher' class='blinker'>|</span>";
     
 }
 
