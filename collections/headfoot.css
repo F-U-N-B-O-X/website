@@ -6,7 +6,7 @@
 }
 
 .headlink {
-   color:white;text-decoration-line:none;
+   color:white;text-decoration-line:none;display:inline-block;
 }
 
 .headlink:hover {
